@@ -110,7 +110,7 @@ const Navbar = () => {
               : "max-h-0 overflow-hidden opacity-0"
           }`}
         >
-          <div className="mt-2 space-y-1 rounded-lg bg-gray-50 px-2 pb-3 pt-2">
+          <div className="mt-2 space-y-1 rounded-lg  px-2 pb-3 pt-2">
             <a
               href="#home"
               onClick={() => handleClick("home")}
@@ -139,7 +139,7 @@ const Navbar = () => {
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 activeLink === "skills"
                   ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                  : "dark:text-gray-50 text-gray-900"
               }`}
             >
               Skills

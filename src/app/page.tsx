@@ -1,3 +1,4 @@
+import Footer from "@/component/footer";
 import Navbar from "@/component/nav";
 import About from "@/sections/about";
 import Contact from "@/sections/contact";
@@ -14,6 +15,7 @@ const Pages = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };

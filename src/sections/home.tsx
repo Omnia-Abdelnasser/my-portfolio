@@ -1,14 +1,14 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Phone } from "lucide-react";
 export default function Home() {
-  
   return (
-    <section id="home" className="w-full min-h-screen flex items-center justify-center px-6 py-5 
-     overflow-hidden dark:bg-gray-900 bg-gray-50">
-
+    <section
+      id="home"
+      className="w-full min-h-screen flex items-center justify-center px-6 py-5 
+     overflow-hidden dark:bg-gray-900 bg-gray-50"
+    >
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
-
         <motion.div
           className="flex-1 mx-auto text-center dark:text-white "
           initial={{ opacity: 0, y: 20 }}
@@ -18,11 +18,17 @@ export default function Home() {
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
             Omniya Abdelnasser
           </h1>
-          <h2 className="text-xl mb-6">
-            Front-End Developer
-          </h2>
-          <p className="leading-relaxed mb-6"> I’m a passionate front-end developer who loves building modern, user-friendly web applications with <span className="font-medium">React, TypeScript, and Tailwind CSS</span>. Always learning, always curious, always improving 🚀 </p>
-                <div className="flex gap-6 items-center justify-center mb-8">
+          <h2 className="text-xl mb-6">Front-End Developer</h2>
+          <p className="leading-relaxed mb-6">
+            {" "}
+            I’m a passionate front-end developer who loves building modern,
+            user-friendly web applications with{" "}
+            <span className="font-medium">
+              React, TypeScript, and Tailwind CSS
+            </span>
+            . Always learning, always curious, always improving 🚀{" "}
+          </p>
+          <div className="flex gap-6 items-center justify-center mb-8">
             <a
               href="https://github.com/Omnia-Abdelnasser"
               target="_blank"
@@ -58,9 +64,7 @@ export default function Home() {
             </button>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
 }
-

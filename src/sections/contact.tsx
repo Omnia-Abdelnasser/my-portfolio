@@ -16,7 +16,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
-import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "@/lib/emailkeys";
+import {
+  EMAILJS_PUBLIC_KEY,
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+} from "@/lib/emailkeys";
 // Validation schema
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -35,8 +39,6 @@ const Contact = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
- 
-
     try {
       await emailjs.send(
         EMAILJS_SERVICE_ID,
@@ -46,9 +48,9 @@ const Contact = () => {
           email: values.email,
           message: values.message,
         },
-        EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY,
       );
-alert("Message sent successfully!");
+      alert("Message sent successfully!");
       form.reset();
     } catch (err) {
       alert("Failed to send message.");
@@ -57,7 +59,10 @@ alert("Message sent successfully!");
   };
 
   return (
-    <section id="contact" className=" flex items-center bg-gray-50 dark:bg-gray-900 justify-center px-6 py-12">
+    <section
+      id="contact"
+      className=" flex items-center bg-gray-50 dark:bg-gray-900 justify-center px-6 py-12"
+    >
       <div className="max-w-3xl w-full text-center">
         <h2
           className="text-3xl md:text-4xl font-bold text-center mb-16 
@@ -118,7 +123,10 @@ alert("Message sent successfully!");
               )}
             />
 
-            <Button type="submit" className=" w-full text-lg border mx-auto flex items-center  bg-pink-400 hover:border-pink-400   ">
+            <Button
+              type="submit"
+              className=" w-full text-lg border mx-auto flex items-center  bg-pink-400 hover:border-pink-400   "
+            >
               Send
             </Button>
           </form>

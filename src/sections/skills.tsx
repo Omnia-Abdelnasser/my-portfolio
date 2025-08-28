@@ -1,16 +1,15 @@
-
-'use client'
-import { motion } from 'framer-motion';
-import { Code, Database, Zap } from 'lucide-react';
+"use client";
+import { motion } from "framer-motion";
+import { Code, Database, Zap } from "lucide-react";
 const Skills = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -19,27 +18,40 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.6
-      }
-    }
+        duration: 0.6,
+      },
+    },
   };
 
   const skills = [
     {
       category: "Languages",
       items: ["HTML", "CSS", "JavaScript", "TypeScript"],
-      icon: <Code className="w-8 h-8" />
+      icon: <Code className="w-8 h-8" />,
     },
     {
       category: "Frameworks & Libraries",
-      items: ["React", "Next.js", "Bootstrap", "Tailwind CSS", "shadcn/ui", "TanStack Query"],
-      icon: <Zap className="w-8 h-8" />
+      items: [
+        "React",
+        "Next.js",
+        "Bootstrap",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "TanStack Query",
+      ],
+      icon: <Zap className="w-8 h-8" />,
     },
     {
       category: "Tools & Technologies",
-      items: ["Git & GitHub", "Visual Studio", "Firebase", "Firestore", "Responsive Design"],
-      icon: <Database className="w-8 h-8" />
-    }
+      items: [
+        "Git & GitHub",
+        "Visual Studio",
+        "Firebase",
+        "Firestore",
+        "Responsive Design",
+      ],
+      icon: <Database className="w-8 h-8" />,
+    },
   ];
 
   return (
@@ -59,7 +71,7 @@ const Skills = () => {
           >
             Skills & Technologies
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8 ">
             {skills.map((skillGroup, index) => (
               <motion.div
@@ -69,10 +81,10 @@ const Skills = () => {
                  dark:border-white/10 hover:border-purple-400/50 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4 ">
-                  <div className="text-pink-400">
-                    {skillGroup.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-pink-400">{skillGroup.category}</h3>
+                  <div className="text-pink-400">{skillGroup.icon}</div>
+                  <h3 className="text-xl font-semibold text-pink-400">
+                    {skillGroup.category}
+                  </h3>
                 </div>
                 <div className="space-y-2">
                   {skillGroup.items.map((skill, skillIndex) => (
@@ -84,7 +96,6 @@ const Skills = () => {
                     </div>
                   ))}
                 </div>
-                
               </motion.div>
             ))}
           </div>

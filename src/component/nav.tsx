@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode";
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleClick = (id: string) => {
     setActiveLink(id);
-    setIsMenuOpen(false); 
+    setIsMenuOpen(false);
   };
 
   return (
@@ -30,7 +30,9 @@ const Navbar = () => {
               href="#home"
               onClick={() => handleClick("home")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "home" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "home"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Home
@@ -39,7 +41,9 @@ const Navbar = () => {
               href="#about"
               onClick={() => handleClick("about")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "about"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               About
@@ -48,7 +52,9 @@ const Navbar = () => {
               href="#skills"
               onClick={() => handleClick("skills")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "skills" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "skills"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Skills
@@ -57,7 +63,9 @@ const Navbar = () => {
               href="#projects"
               onClick={() => handleClick("projects")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "projects" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "projects"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Projects
@@ -66,7 +74,9 @@ const Navbar = () => {
               href="#contact"
               onClick={() => handleClick("contact")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "contact" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "contact"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Contact
@@ -82,7 +92,11 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600"
               >
-                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                {isMenuOpen ? (
+                  <X className="h-6 w-6" />
+                ) : (
+                  <Menu className="h-6 w-6" />
+                )}
               </Button>
             </div>
           </div>
@@ -91,7 +105,9 @@ const Navbar = () => {
         {/* Mobile menu */}
         <div
           className={`transition-all duration-300 ease-in-out md:hidden ${
-            isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 overflow-hidden opacity-0"
+            isMenuOpen
+              ? "max-h-64 opacity-100"
+              : "max-h-0 overflow-hidden opacity-0"
           }`}
         >
           <div className="mt-2 space-y-1 rounded-lg bg-gray-50 px-2 pb-3 pt-2">
@@ -99,7 +115,9 @@ const Navbar = () => {
               href="#home"
               onClick={() => handleClick("home")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "home" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "home"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Home
@@ -108,7 +126,9 @@ const Navbar = () => {
               href="#about"
               onClick={() => handleClick("about")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "about"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               About
@@ -117,7 +137,9 @@ const Navbar = () => {
               href="#skills"
               onClick={() => handleClick("skills")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "skills" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "skills"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Skills
@@ -126,7 +148,9 @@ const Navbar = () => {
               href="#projects"
               onClick={() => handleClick("projects")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "projects" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "projects"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Projects
@@ -135,7 +159,9 @@ const Navbar = () => {
               href="#contact"
               onClick={() => handleClick("contact")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "contact" ? "text-pink-500" : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "contact"
+                  ? "text-pink-500"
+                  : "dark:text-gray-50 hover:text-blue-600"
               }`}
             >
               Contact
@@ -144,7 +170,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

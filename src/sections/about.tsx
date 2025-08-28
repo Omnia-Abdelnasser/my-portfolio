@@ -1,14 +1,15 @@
-
-
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 
 import { motion } from "framer-motion";
 import { MapPin, Mail, GraduationCap, Code } from "lucide-react";
 
-
 export default function About() {
   return (
-    <section id="about" className="relative  bg-gray-50 dark:bg-gray-900 overflow-hidden py-10">
+    <section
+      id="about"
+      className="relative  bg-gray-50 dark:bg-gray-900 overflow-hidden py-10"
+    >
       {/* Background blobs */}
       <motion.div
         className="absolute top-1/3 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"

@@ -1,4 +1,3 @@
-
 import { Code, Database, ExternalLink, Github, Palette } from "lucide-react";
 
 const Projects = () => {

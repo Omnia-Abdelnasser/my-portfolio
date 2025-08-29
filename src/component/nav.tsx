@@ -81,6 +81,7 @@ const Navbar = () => {
             <ModeToggle />
             <div className="md:hidden">
               <Button
+                aria-label="Toggle Menu"
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}

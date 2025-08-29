@@ -57,12 +57,18 @@ export default function Home() {
 
           <div className="flex gap-4 items-center justify-center">
             <a href="#contact">
-              <button className="rounded-md bg-pink-500 px-5 py-2 hover:bg-pink-600 transition text-white">
+              <button
+                aria-label="Contact Me"
+                className="rounded-md bg-pink-500 px-5 py-2 hover:bg-pink-600 transition text-white"
+              >
                 Contact Me
               </button>
             </a>
             <a href="#projects">
-              <button className="rounded-md border border-pink-500 px-5 py-2 hover:bg-pink-500 transition dark:text-gray-50 ">
+              <button
+                aria-label="View Projects"
+                className="rounded-md border border-pink-500 px-5 py-2 hover:bg-pink-500 transition dark:text-gray-50 "
+              >
                 View Projects
               </button>
             </a>

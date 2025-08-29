@@ -30,9 +30,7 @@ const Navbar = () => {
               href="#home"
               onClick={() => handleClick("home")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "home"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "home" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               Home
@@ -41,9 +39,7 @@ const Navbar = () => {
               href="#about"
               onClick={() => handleClick("about")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "about"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               About
@@ -52,9 +48,7 @@ const Navbar = () => {
               href="#skills"
               onClick={() => handleClick("skills")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
-                activeLink === "skills"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "skills" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               Skills
@@ -65,7 +59,7 @@ const Navbar = () => {
               className={`text-lg px-3 py-2 font-medium transition-colors ${
                 activeLink === "projects"
                   ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                  : "dark:text-gray-50 "
               }`}
             >
               Projects
@@ -76,7 +70,7 @@ const Navbar = () => {
               className={`text-lg px-3 py-2 font-medium transition-colors ${
                 activeLink === "contact"
                   ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                  : "dark:text-gray-50 "
               }`}
             >
               Contact
@@ -90,7 +84,7 @@ const Navbar = () => {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+                className="p-2 text-gray-600 hover:bg-blue-50 "
               >
                 {isMenuOpen ? (
                   <X className="h-6 w-6" />
@@ -115,9 +109,7 @@ const Navbar = () => {
               href="#home"
               onClick={() => handleClick("home")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "home"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "home" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               Home
@@ -126,9 +118,7 @@ const Navbar = () => {
               href="#about"
               onClick={() => handleClick("about")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "about"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               About
@@ -137,9 +127,7 @@ const Navbar = () => {
               href="#skills"
               onClick={() => handleClick("skills")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "skills"
-                  ? "text-pink-500"
-                  : "dark:text-gray-50 text-gray-900"
+                activeLink === "skills" ? "text-pink-500" : "dark:text-gray-50"
               }`}
             >
               Skills
@@ -150,7 +138,7 @@ const Navbar = () => {
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 activeLink === "projects"
                   ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                  : "dark:text-gray-50 "
               }`}
             >
               Projects
@@ -161,7 +149,7 @@ const Navbar = () => {
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 activeLink === "contact"
                   ? "text-pink-500"
-                  : "dark:text-gray-50 hover:text-blue-600"
+                  : "dark:text-gray-50 "
               }`}
             >
               Contact

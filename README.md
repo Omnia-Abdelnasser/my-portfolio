@@ -24,7 +24,6 @@ Language: TypeScript
 
 Styling: Tailwind CSS + shadcn/ui
 
-
 Forms: React Hook Form + Zod
 
 Animations: Framer Motion

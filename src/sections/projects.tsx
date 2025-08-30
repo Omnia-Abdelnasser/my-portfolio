@@ -58,7 +58,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 dark:bg-gray-900 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto sm:px-6 px-12">
         <h2
           className="text-3xl md:text-4xl font-bold text-center mb-16
              bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent"
@@ -66,7 +66,7 @@ const Projects = () => {
           Projects
         </h2>
 
-        <Carousel className="max-w-5xl mx-auto">
+        <Carousel className="sm:max-w-6xl mx-auto max-w-4xl">
           <CarouselContent>
             {projects.map((project, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

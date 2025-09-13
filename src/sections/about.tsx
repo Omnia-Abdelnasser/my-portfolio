@@ -77,7 +77,7 @@ export default function About() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-pink-500" />
-                <span>omnia@example.com</span>
+                <span>omniaabdelnasser067@gmail.com</span>
               </li>
             </motion.ul>
           </div>

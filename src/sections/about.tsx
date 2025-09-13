@@ -10,7 +10,6 @@ export default function About() {
       id="about"
       className="relative  bg-gray-50 dark:bg-gray-900 overflow-hidden py-10"
     >
-      {/* Background blobs */}
       <motion.div
         className="absolute top-1/3 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -58,7 +57,6 @@ export default function About() {
               through real-world practice and challenging projects.
             </motion.p>
 
-            {/* Personal Information */}
             <motion.ul
               className="space-y-4 mt-6"
               initial={{ opacity: 0, y: 30 }}
@@ -84,7 +82,6 @@ export default function About() {
             </motion.ul>
           </div>
 
-          {/* Right Image */}
           <motion.div
             className="flex justify-center"
             initial={{ opacity: 0, x: 50 }}

@@ -26,7 +26,7 @@ export default function Home() {
             <span className="font-medium">
               React, TypeScript, and Tailwind CSS
             </span>
-            . Always learning, always curious, always improving 🚀{" "}
+            . Always learning, always curious, always improving{" "}
           </p>
           <div className="flex gap-6 items-center justify-center mb-8">
             <a
@@ -38,7 +38,7 @@ export default function Home() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/omnia-abdelnasser"
+              href="https://linkedin.com/in/omniya-abdelnasser"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-pink-500 hover:bg-pink-500 hover:text-white transition"
@@ -46,7 +46,7 @@ export default function Home() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://wa.me/201234567890"
+              href="https://wa.me/201552769471"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-pink-500 hover:bg-pink-500 hover:text-white transition"

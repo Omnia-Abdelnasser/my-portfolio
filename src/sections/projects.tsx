@@ -45,15 +45,14 @@ const Projects = () => {
       github: "https://github.com/Omnia-Abdelnasser/web-portfolio",
       demo: "https://omnia-abdelnasser.github.io/web-portfolio/",
     },
-    // {
-    //   title: "Movies",
-    //   description:
-    //     "Movie search application built with React",
-    //   tech: ["React","JavaScript","CSS"],
-    //   icon: <Code className="w-8 h-8" />,
-    //   github: "https://github.com/your-username/chat-app",
-    //   demo: "https://chat-app-demo.vercel.app",
-    // }
+    {
+      title: "Handmade",
+      description: "Handmade products marketplace built with Next.js",
+      tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui"],
+      icon: <Code className="w-8 h-8" />,
+      github: "https://github.com/Omnia-Abdelnasser/Handmade",
+      demo: "https://handmade-one.vercel.app/",
+    },
   ];
 
   return (
@@ -71,47 +70,42 @@ const Projects = () => {
             {projects.map((project, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div
-                  className="group relative p-6 rounded-2xl shadow-md 
-                hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 h-full"
+                  className="relative flex flex-col justify-between p-6 rounded-2xl shadow-md 
+                  border border-gray-200 dark:border-gray-700 h-full"
                 >
-                  <div className="flex items-center mb-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-400">
-                      {project.icon}
+                  <div>
+                    <div className="flex items-center mb-4">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-400">
+                        {project.icon}
+                      </div>
+                      <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 ml-4">
+                        {project.title}
+                      </h3>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 ml-4">
-                      {project.title}
-                    </h3>
+
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.tech.map((techItem, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full 
+                          text-xs font-medium text-gray-700 dark:text-gray-300"
+                        >
+                          {techItem}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
-                  {/* Description */}
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                    {project.description}
-                  </p>
-
-                  {/* Tech tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tech.map((techItem, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full 
-                        text-xs font-medium text-gray-700 dark:text-gray-300"
-                      >
-                        {techItem}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Overlay Links */}
-                  <div
-                    className="absolute inset-0 flex items-center justify-center gap-6 
-                  bg-black/40 dark:bg-black/50 backdrop-blur-sm 
-                  opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl"
-                  >
+                  <div className="flex justify-end gap-4 mt-auto">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-full border border-pink-400 bg-gray-100 dark:bg-gray-700 hover:bg-purple-500 hover:text-white transition"
+                      className="p-2 rounded-full border border-pink-400 bg-gray-100 dark:bg-gray-700"
                     >
                       <Github className="w-4 h-4" />
                     </a>
@@ -119,7 +113,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-full border border-pink-400 bg-gray-100 dark:bg-gray-700 hover:bg-pink-500 hover:text-white transition"
+                      className="p-2 rounded-full border border-pink-400 bg-gray-100 dark:bg-gray-700"
                     >
                       <ExternalLink className="w-4 h-4" />
                     </a>

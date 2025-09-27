@@ -53,6 +53,22 @@ const Projects = () => {
       github: "https://github.com/Omnia-Abdelnasser/Handmade",
       demo: "https://handmade-one.vercel.app/",
     },
+    {
+      title: "movie app",
+      description: "A movie app built with Next.js and Tailwind CSS.",
+      tech: [
+        "Next.js",
+        "TailwindCSS",
+        "API",
+        " TypeScript",
+        "shadcn/ui",
+        " React Query",
+        " Zustand",
+      ],
+      icon: <Code className="w-8 h-8" />,
+      github: "https://github.com/Omnia-Abdelnasser/movies",
+      demo: "https://movies-three-flame.vercel.app/",
+    },
   ];
 
   return (
